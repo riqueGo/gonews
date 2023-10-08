@@ -1,0 +1,41 @@
+{{define "Form"}}
+    <!doctype html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <title>New News</title>
+    </head>
+    <body class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">New News</h1>
+            </div>
+        </div>
+        <form method="POST" action="create-news">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="name">Title:</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="description">Content:</label>
+                        <input type="text" name="content" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="save" class="btn btn-success">Publish</button>
+            <a class="btn btn-info" href="/">Home</a>
+        </form>
+    </body>
+    </html>
+{{end}}
